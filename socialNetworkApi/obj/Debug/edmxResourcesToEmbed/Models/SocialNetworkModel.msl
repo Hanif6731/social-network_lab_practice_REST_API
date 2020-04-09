@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SocialMediaModelStoreContainer" CdmEntityContainer="SocialMediaDataContext">
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="SocialMediaModel.Comment">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="commenter" ColumnName="commenter" />
+          <ScalarProperty Name="comment1" ColumnName="comment" />
+          <ScalarProperty Name="postId" ColumnName="postId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Posts">
+      <EntityTypeMapping TypeName="SocialMediaModel.Post">
+        <MappingFragment StoreEntitySet="Posts">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="element" ColumnName="element" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
